@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# File Backup from backup to destination directory
+# Version 1.0
+
+
+backup_dir="/path/to/backup"
+source_dir="/path/to/source"
+
+# Create a timestamped backup of the source directory
+tar -czf "$backup_dir/backup_$(date +%Y%m%d_%H%M%S).tar.gz" "$source_dir"
